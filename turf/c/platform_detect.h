@@ -94,16 +94,11 @@
             // Thumb instruction set mode
             #define TURF_CPU_ARM_THUMB 1
         #endif
-    #elif defined(__arm64__)
+    #elif defined(__aarch64__)
         // ARM64
         #define TURF_CPU_ARM64 1
         #define TURF_PTR_SIZE 8
-        #if defined(__ARM64_ARCH_8__)
-            // ARMv8
-            #define TURF_CPU_ARM_VERSION 8
-        #else
-            #error "Unrecognized ARM64 CPU architecture version!"
-        #endif
+        #define TURF_CPU_ARM_VERSION 8
     #elif defined(__powerpc__) || defined(__POWERPC__) || defined(__PPC__)
         #define TURF_CPU_POWERPC 1
         #if defined(__powerpc64__)
