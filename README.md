@@ -1,3 +1,12 @@
+
+---
+**Changes Made**
+
+- **platform_detect.h**: Updated the macro from `__arm64__` to `__aarch64__` to correctly detect ARM64 architecture.
+- Ensured compatibility with ARMv8 architecture.
+---
+
+
 Turf is a configurable C++ platform adapter. It defines a common API for:
 
 * Thread creation
